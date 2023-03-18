@@ -48,7 +48,7 @@ public class insureMe {
 		File screenShot = scrShot.getScreenshotAs(OutputType.FILE);
 		//File destFile = new File ("C:\\chromedriver\\test-reports\\scr.png");
 		File destFile = new File ("//home/ubuntu//scr.png");
-		//FileUtils.copyFile(screenShot, destFile);
+		FileUtils.copyFile(screenShot, destFile);
 		
 		Thread.sleep(3000);
 		

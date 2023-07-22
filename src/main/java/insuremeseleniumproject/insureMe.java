@@ -29,7 +29,7 @@ public class insureMe {
 		
 		WebDriver driver = new ChromeDriver(chromeOptions);
 		//driver.get("http://localhost:8081/contact.html");
-		driver.get("http://54.176.199.149:8084/contact.html");
+		driver.get("http://18.144.169.250:8084/contact.html");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.id("inputName")).sendKeys("Niladri Sankar Mondal");
 		driver.findElement(By.id("inputNumber")).sendKeys("8431630203");
@@ -45,7 +45,7 @@ public class insureMe {
 			System.out.println("Script Failed");
 		}
 		
-		//take creenshot of the result
+		//take Screenshot of the result
 		TakesScreenshot scrShot = ((TakesScreenshot)driver);
 		File screenShot = scrShot.getScreenshotAs(OutputType.FILE);
 		//File destFile = new File ("C:\\chromedriver\\test-reports\\scr.png");
